@@ -16,7 +16,7 @@ andrew$ files2s3 users/ bucket_name
 
 == INSTALL:
 
-sudo gem install files2s3
+sudo gem install preprocessor-files2s3
 
 == Paperclip
 
