@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'files2s3'
+
+
+@path = (ARGV.first && File.exist?(ARGV.first)) ? ARGV.first : Dir.getwd
+
+Files2s3.start!(@path, ARGV[1])
+
