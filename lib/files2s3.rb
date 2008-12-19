@@ -27,7 +27,7 @@ class Files2s3
     def transfer_file(filepath)
       key = self.key_name(filepath)
       puts "Upload #{filepath} as #{key}"
-      @@bucket.put(key, File.new(filepath))
+      @@bucket.put(key, File.new(filepath), {}, 'public-read')
       puts 'Completed'
     end
     
